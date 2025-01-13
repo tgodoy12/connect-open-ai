@@ -1,0 +1,11 @@
+# aplication.properties example configuration
+
+#Application Name
+spring.application.name =
+
+# API Url
+OPEN_AI_URL = https://api.openai.com/v1/chat/completions
+
+# API Key
+OPEN_AI_KEY =
+

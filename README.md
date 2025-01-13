@@ -1,17 +1,17 @@
-# Proyecto Educativo con Spring Boot
+# Conectar OPEN AI con SPRINGBOOT
 
-Este repositorio es para probar la conexión con la API de OpenAI.
+Este repositorio es únicamente para probar la conexión con la API de Open Ai.
 
 ---
 
 ### Pasos para configurar el proyecto:
 
-1. Copia el archivo `application.properties.example` y cambia el nombre a `application.properties`:
+1. Copiar el archivo `application.properties.example` y cambiar el nombre a `application.properties`:
    ```bash
    cp src/main/resources/application.properties.example src/main/resources/application.properties
    ```
 
-2. Abre el archivo `application.properties` y edita los valores con tus propias configuraciones:
+2. Abrir el archivo `application.properties` y editar los valores con tus propias configuraciones:
    ```properties
     #Application Name
     spring.application.name =

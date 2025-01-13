@@ -35,9 +35,11 @@ public class ChatGPTService {
         ChatGPTRequest chatGPTRequest = new ChatGPTRequest();
 
 
-        // Crear una lista de mensajes para la solicitud
+        // Crear una lista de mensajes con el rol y el content
         List<ChatGPTMessages> messages = new ArrayList<>();
         messages.add(new ChatGPTMessages("user", message));  // El rol "user" es quien hace la pregunta
+
+        //setear messages en la request
         chatGPTRequest.setMessages(messages);
 
         String url = OPEN_AI_URL;
@@ -49,10 +51,6 @@ public class ChatGPTService {
         Gson gson = new Gson();
 
         String body = gson.toJson(chatGPTRequest);
-
-        log.info("URL: " + url);
-        log.info("Authorization: Bearer " + OPEN_AI_KEY);
-        log.info("Body: " + body);
 
         try {
             final StringEntity entity = new StringEntity(body);

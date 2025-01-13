@@ -65,7 +65,7 @@ public class ChatGPTService {
                 log.info("Respuesta de la API: " + responseBody);
 
                 // Deserializar la respuesta
-                ChatGPTResponse chatGPTResponse = gson.fromJson(responseBody, ChatGPTResponse.class);
+                //ChatGPTResponse chatGPTResponse = gson.fromJson(responseBody, ChatGPTResponse.class);
                 //log.info(chatGPTResponse.getChoices().get(0).getText());
                 //return chatGPTResponse.getChoices().get(0).getText();
                 return responseBody;

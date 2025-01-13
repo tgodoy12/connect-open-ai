@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 public class ChatGPTResponse {
-      // Usa @JsonProperty para asegurarte del mapeo correcto.
+
     private List<ChatGPTChoice> choices;
 }
 
